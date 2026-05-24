@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Munplayer</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --cyan: #00e5ff;
+    --cyan-border: rgba(0,229,255,0.3);
+    --bg: #080c0d;
+    --bg2: #0d1214;
+    --text: #e0f0f2;
+    --muted: #5a7a80;
+    --mono: 'Share Tech Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+  nav {
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,229,255,0.08);
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 1.1rem;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-decoration: none;
+  }
+  .nav-back {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--cyan); }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 2rem 6rem;
+  }
+  .page-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--cyan);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-family: var(--mono);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .updated {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+  }
+  .policy-block {
+    border-left: 2px solid rgba(0,229,255,0.2);
+    padding: 2rem 2rem 2rem 2.5rem;
+    margin-bottom: 1px;
+    background: var(--bg2);
+    transition: border-color 0.2s;
+  }
+  .policy-block:hover { border-color: var(--cyan); }
+  .policy-block h2 {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .policy-block p {
+    font-size: 0.95rem;
+    color: #8aaab0;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+  }
+  .policy-block p:last-child { margin-bottom: 0; }
+  .policy-block ul {
+    list-style: none;
+    padding: 0;
+  }
+  .policy-block ul li {
+    font-size: 0.95rem;
+    color: #8aaab0;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+  }
+  .policy-block ul li::before {
+    content: '//';
+    position: absolute;
+    left: 0;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--cyan);
+    opacity: 0.5;
+    top: 0.25rem;
+  }
+  .contact-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+  .contact-link:hover { text-decoration: underline; }
+  footer {
+    border-top: 1px solid rgba(0,229,255,0.08);
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); letter-spacing: 0.1em; }
+  .footer-links a {
+    font-family: var(--mono); font-size: 0.7rem; color: var(--muted);
+    text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;
+    margin-left: 1.5rem; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--cyan); }
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.2rem; }
+    .container { padding: 3rem 1.2rem 4rem; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; }
+    .footer-links a { margin: 0 0.75rem; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">[ MUNPLAYER ]</a>
+  <a href="index.html" class="nav-back">&#8592; Back to Home</a>
+</nav>
+<div class="container">
+  <div class="page-label">// legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: May 2026</div>
 
+  <div class="policy-block">
+    <h2>The Short Version</h2>
+    <p>Munplayer collects no data. None. It works entirely on your device with no internet connection, no account, and no backend infrastructure of any kind.</p>
+  </div>
+
+  <div class="policy-block">
+    <h2>Information We Collect</h2>
+    <p>We do not collect, store, transmit, or share any personal information or usage data whatsoever.</p>
+    <p>Munplayer does not collect:</p>
+    <ul>
+      <li>Personal identifiers of any kind</li>
+      <li>Usage statistics or analytics</li>
+      <li>Device information or identifiers</li>
+      <li>Location data</li>
+      <li>Audio files or playback history</li>
+      <li>Crash reports or diagnostics</li>
+    </ul>
+  </div>
+
+  <div class="policy-block">
+    <h2>How the App Works</h2>
+    <p>Munplayer reads audio files stored locally on your device. All playback position data is saved exclusively on your device using local storage. No data is ever transmitted to any server.</p>
+    <p>The app requires no internet connection to function and contains no third-party SDKs, advertising frameworks, or analytics libraries.</p>
+  </div>
+
+  <div class="policy-block">
+    <h2>Third Parties</h2>
+    <p>Munplayer does not share data with any third parties because no data is collected in the first place. There are no advertising partners, analytics providers, or data brokers involved.</p>
+  </div>
+
+  <div class="policy-block">
+    <h2>Children's Privacy</h2>
+    <p>Munplayer does not collect personal information from anyone, including children under the age of 13. The app is safe for all ages.</p>
+  </div>
+
+  <div class="policy-block">
+    <h2>Changes to This Policy</h2>
+    <p>If this policy is ever updated, the revised version will be posted at this URL with an updated date. Given the nature of the app, significant changes are unlikely.</p>
+  </div>
+
+  <div class="policy-block">
+    <h2>Contact</h2>
+    <p>Questions about this policy can be directed to:<br>
+    <a href="mailto:MunPlayerDev@gmail.com" class="contact-link">MunPlayerDev@gmail.com</a></p>
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">[ MUNPLAYER ]</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="mailto:MunPlayerDev@gmail.com">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
