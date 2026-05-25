@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Munplayer — Offline Audio Player</title>
- <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -72,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8rem 2rem 4rem;
+    padding: 6rem 2rem 3rem;
     position: relative;
   }
   .hero-inner {
@@ -208,7 +207,7 @@
   .ctrl-skip { font-family: var(--mono); font-size: 0.55rem; color: var(--cyan); border: 1px solid var(--cyan-border); padding: 5px 10px; letter-spacing: 0.05em; transition: color 0.4s, border-color 0.4s; }
   .ctrl-play { width: 36px; height: 36px; border-radius: 50%; background: var(--cyan); display: flex; align-items: center; justify-content: center; transition: background 0.4s; }
   .play-icon { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 12px solid #080c0d; margin-left: 2px; }
-  section { max-width: 1100px; margin: 0 auto; padding: 6rem 2rem; text-align: center; }
+  section { max-width: 1100px; margin: 0 auto; padding: 3.5rem 2rem; text-align: center; }
   .section-label { font-family: var(--mono); font-size: 0.7rem; color: var(--cyan); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem; transition: color 0.4s; }
   .section-title { font-family: var(--mono); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); margin-bottom: 3rem; line-height: 1.2; }
   .features-grid {
@@ -232,7 +231,7 @@
   }
   .glow-swatch:hover { transform: scale(1.1); }
   .glow-swatch.active { border: 3px solid #fff; transform: scale(1.15); }
-  .cta-section { text-align: center; padding: 6rem 2rem; position: relative; }
+  .cta-section { text-align: center; padding: 3.5rem 2rem; position: relative; }
   .cta-section::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 1px; height: 60px; background: linear-gradient(to bottom, transparent, var(--cyan-border)); }
   .cta-section h2 { font-family: var(--mono); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 400; color: var(--text); margin-bottom: 1rem; }
   .cta-section p { color: var(--muted); font-size: 1rem; margin-bottom: 2.5rem; }
@@ -280,7 +279,6 @@
       <p>Built for long-form audio. Your position is saved on every track, every time. No ads. No account. No internet required.</p>
       <div>
         <a href="#download" class="btn-primary">&#9654; Get it Free</a>
-        <a href="#features" class="btn-secondary">Learn More</a>
       </div>
     </div>
     <div class="phone-frame">
@@ -292,22 +290,6 @@
             <div class="screen-sort">SORT: LATEST &#9660;</div>
           </div>
           <div class="track-list">
-            <div class="track">
-              <div class="track-name">History of Rome -- Ep. 214</div>
-              <div class="track-meta">
-                <span class="track-time">82:20</span>
-                <div class="track-progress-bar"><div class="track-progress-fill" style="width:37%"></div></div>
-                <span class="track-pct">37%</span>
-              </div>
-            </div>
-            <div class="track">
-              <div class="track-name">Lex Fridman -- Andrej Karpathy</div>
-              <div class="track-meta">
-                <span class="track-time">3:32:17</span>
-                <div class="track-progress-bar"><div class="track-progress-fill" style="width:0%"></div></div>
-                <span class="track-pct">0%</span>
-              </div>
-            </div>
             <div class="track active">
               <div class="track-name">Hardcore History -- Wrath of the Khans</div>
               <div class="track-meta">
@@ -317,17 +299,25 @@
               </div>
             </div>
             <div class="track">
-              <div class="track-name">Omnibus -- Beige Period</div>
+              <div class="track-name">Hardcore History -- Ghosts of the Ostfront</div>
               <div class="track-meta">
-                <span class="track-time">1:38:05</span>
-                <div class="track-progress-bar"><div class="track-progress-fill" style="width:81%"></div></div>
-                <span class="track-pct">81%</span>
+                <span class="track-time">4:44:22</span>
+                <div class="track-progress-bar"><div class="track-progress-fill" style="width:91%"></div></div>
+                <span class="track-pct">91%</span>
               </div>
             </div>
             <div class="track">
-              <div class="track-name">In Our Time -- The Silk Road</div>
+              <div class="track-name">Epochs -- Magellan Part XIII</div>
               <div class="track-meta">
-                <span class="track-time">47:22</span>
+                <span class="track-time">1:12:08</span>
+                <div class="track-progress-bar"><div class="track-progress-fill" style="width:33%"></div></div>
+                <span class="track-pct">33%</span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track-name">Lads Hour -- Martian Constitution</div>
+              <div class="track-meta">
+                <span class="track-time">1:58:45</span>
                 <div class="track-progress-bar"><div class="track-progress-fill" style="width:0%"></div></div>
                 <span class="track-pct">0%</span>
               </div>
@@ -390,16 +380,8 @@
       <h3>Long-Form First</h3>
       <p>Designed for 1, 2, 6-hour files. Built for listeners who actually finish what they start.</p>
     </div>
-    <div class="feature">
-      <div class="feature-icon">&#8862;</div>
-      <h3>Skip Controls</h3>
-      <p>15 second skip buttons built into the player. Jump past an intro, rewind a point you missed. Simple and always within reach.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">&#9672;</div>
-      <h3>Sort by Progress</h3>
-      <p>Sort your library by percentage listened. See what you have finished, what is in progress, what you have not started.</p>
-    </div>
+
+
   </div>
 </section>
 
@@ -407,6 +389,9 @@
   <h2>Free. No catch.</h2>
   <p>Download on Google Play. No account, no subscription, no ads. Ever.</p>
   <a href="https://play.google.com/store" class="btn-primary" style="font-size: 0.9rem; padding: 1rem 2.5rem;">&#9654; Download on Google Play</a>
+  <div style="margin-top: 1.5rem;">
+    <a href="https://www.buymeacoffee.com/munplayer" target="_blank" style="display:inline-flex; align-items:center; gap:0.5rem; font-family:var(--mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); text-decoration:none; border:1px solid rgba(255,255,255,0.08); padding:0.6rem 1.4rem; transition:all 0.2s;" onmouseover="this.style.color='var(--cyan)';this.style.borderColor='var(--cyan-border)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='rgba(255,255,255,0.08)'">&#9749; Buy me a coffee</a>
+  </div>
 </div>
 <footer>
   <div class="footer-logo">[ MUNPLAYER ]</div>
